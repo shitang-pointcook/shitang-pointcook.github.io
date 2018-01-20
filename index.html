@@ -57,7 +57,6 @@
                     <ul id="nav" class="nav navbar-nav navigation">
                         <li class="page-scroll menu-item"><a href="#home-slider">Home</a></li>
                         <li class="page-scroll menu-item"><a href="#about">About</a></li>
-                        <li class="page-scroll menu-item"><a href="#">Menu</a></li>
                         <li class="page-scroll menu-item"><a href="#gallery">Gallery</a></li>
                         <li class="page-scroll menu-item"><a href="#reservations">Reservations</a></li>
                         <li class="page-scroll menu-item"><a href="#contact">Location</a></li>
@@ -351,14 +350,14 @@
                                 </a>
                             </article>
                      
-                            <article class="entry restaurant">
+                            <article class="entry food">
                                 <a class="swipebox" href="images/gallery/02.jpg">
                                 <img src="images/gallery/02.jpg" class="img-responsive" alt=""/>
                                 <span class="magnifier"></span>
                                 </a>
                             </article>
                      
-                            <article class="entry restaurant">
+                            <article class="entry food">
                                 <a class="swipebox" href="images/gallery/03.jpg">
                                 <img src="images/gallery/03.jpg" class="img-responsive" alt=""/>
                                 <span class="magnifier"></span>
@@ -445,16 +444,16 @@
                         <form action="https://formspree.io/alex@itman.design" method="post">
                             <div class="col-md-5 col-md-offset-1 jt_col column_container">    
                                 <p>Book a table</p>
-                                <input type="text" id="date" name="date" placeholder="Date" class="text date required" >
-                                <input type="text" id="time" name="time" placeholder="Time" class="text time required" >
-                                <input type="text" id="party" name="party" placeholder="Party" class="text party required" >
+                                <input type="text" id="date" name="date" placeholder="Date" class="text date required" required>
+                                <input type="text" id="time" name="time" placeholder="Time" class="text time required" required>
+                                <input type="text" id="party" name="party" placeholder="Party" class="text party required" required>
                             </div>
 
                             <div class="col-md-5 jt_col column_container">    
                                 <p>Contact Details</p>
-                                <input type="text" id="reservation_name" name="reservation_name" placeholder="Name" class="text reservation_name required" >
-                                <input type="email" id="reservation_email" name="reservation_email" class="tex email required" placeholder="Email" >
-                                <input type="text" id="reservation_phone" name="reservation_phone" placeholder="Phone" class="text reservation_phone required">
+                                <input type="text" id="reservation_name" name="reservation_name" placeholder="Name" class="text reservation_name required" required>
+                                <input type="email" id="reservation_email" name="reservation_email" class="tex email required" placeholder="Email" required>
+                                <input type="text" id="reservation_phone" name="reservation_phone" placeholder="Phone" class="text reservation_phone required" required>
                             </div>
 
                             <div class="col-md-10 col-md-offset-1 jt_col column_container">    
@@ -521,36 +520,50 @@
 
 
         <!-- BEGIN CONTACT SECTION -->
-        <section id="contact" class="section contact dark">
+        <section id="contact" class="section contact">
             <div class="container">
                 <div class="jt_row jt_row-fluid row">
 
                     <div class="col-md-12 jt_col column_container">
-                        <h2 class="section-title">Contact</h2>
+                        <h2 class="section-title"><i class="fa fa-truck" aria-hidden="true"></i> Delivery</h2>
                     </div>
                     <div class="col-md-6 col-md-offset-3 jt_col column_container">
                         <div class="section-subtitle">
                             Shop 3, 13 Adelphi Boulevard, Point Cook, Melbourne  <a href="tel:0383764111">03 8376 4111</a>
                         </div>
                     </div>
-                        <form action="https://formspree.io/alex@itman.design" method="post">
-                                <div class="col-md-6 jt_col column_container">    
-                                    <input type="text" id="name" name="name" class="text name required" placeholder="Name" >
-                                    <input type="email" id="email" name="email" class="tex email required" placeholder="Email" >
-                                    <input type="text" id="subject" name="subject" placeholder="Subject" >
-                                </div>
+                    <div class="col-md-3 col-md-offset-3 jt_col column_container">
+                        <p>
+                            <ul>
+                        <li><h4>Pointcook delivery service</h4></li>
+                        <li ><h4>No minimum order</h4></li>
+                        <li><h4>Fresh guaranteed</h4></li>
+                            </ul>
+                        </p>
+                    </div>
+                    <div class="col-md-3 jt_col column_container">
+                        <ul>
+                            <li><h4>Delivery fee is $3 within 3km, and $5 within 5km.</h4></li>
+                            <li><h4>Please call us via <a href="tel:0383764111">03 8376 4111</a> for more information.</h4></li>
+                        </ul>
+                    </div>
+                        <!--<form action="https://formspree.io/alex@itman.design" method="post">-->
+                                <!--<div class="col-md-6 jt_col column_container">    -->
+                                    <!--<input type="text" id="name" name="name" class="text name required" placeholder="Name" >-->
+                                    <!--<input type="email" id="email" name="email" class="tex email required" placeholder="Email" >-->
+                                    <!--<input type="text" id="subject" name="subject" placeholder="Subject" >-->
+                                <!--</div>-->
 
-                                <div class="col-md-6 jt_col column_container">    
-                                     <textarea id="message" name="message" class="text area required" placeholder="Message" rows="10"></textarea>
-                                </div>
+                                <!--<div class="col-md-6 jt_col column_container">    -->
+                                     <!--<textarea id="message" name="message" class="text area required" placeholder="Message" rows="10"></textarea>-->
+                                <!--</div>-->
 
-                                <div class="col-md-4 col-md-offset-4 jt_col column_container"> 
-                                <div class="formSent"><strong>Your Message Has Been Sent!</strong> Thank you for contacting us.</div>    
-                                <!--<input type="submit" class="button contact center" value="Submit" >-->
-                                    <button type="submit" class="button contact center" value="Submit">Submit</button>
-                                </div>
-                                
-                            </form>
+                                <!--<div class="col-md-4 col-md-offset-4 jt_col column_container"> -->
+                                <!--<div class="formSent"><strong>Your Message Has Been Sent!</strong> Thank you for contacting us.</div>    -->
+                                <!--&lt;!&ndash;<input type="submit" class="button contact center" value="Submit" >&ndash;&gt;-->
+                                    <!--<button type="submit" class="button contact center" value="Submit">Submit</button>-->
+                                <!--</div>-->
+                        <!--</form>-->
                     <div class="voffset100"></div>
                 </div>
                     <div class="voffset50"></div>
